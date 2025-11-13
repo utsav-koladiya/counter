@@ -1,0 +1,127 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+
+.main,
+.main2 {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 35px 25px;
+  margin: 20px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.main:hover,
+.main2:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+}
+h1 {
+  margin-bottom: 18px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00f5a0, #00d9f5);
+
+  
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  font-weight: 500;
+}
+
+
+input[type="number"] {
+  width: 85%;
+  padding: 12px 15px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #00e6ff;
+  box-shadow: 0 0 12px #00e6ff66;
+}
+
+button {
+  padding: 10px 22px;
+  margin: 6px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #00d2ff, #3a47d5);
+  transition: all 0.3s ease, background 0.4s ease;
+  box-shadow: 0 5px 15px rgba(58, 71, 213, 0.4);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #3a47d5, #00d2ff);
+}
+
+button:active {
+  transform: scale(0.96);
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn {
+  display: block;
+  margin: auto;
+  width: 85%;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  box-shadow: 0 5px 18px rgba(255, 110, 196, 0.5);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #7873f5, #ff6ec4);
+  box-shadow: 0 10px 30px rgba(255, 110, 196, 0.6);
+  transform: translateY(-3px);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main,
+.main2 {
+  animation: fadeIn 0.8s ease forwards;
+}
