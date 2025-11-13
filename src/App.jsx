@@ -8,7 +8,6 @@ let App = () => {
   let Change = (e) => {
     setNum(e.target.value)
   }
-
   let Submit = () => {
     setCount(num) 
   }
@@ -22,6 +21,9 @@ let Increase = () => {
 let Decrease = () => {
   
   setCount(--count)
+
+
+
 }
   return (
     <>
@@ -35,9 +37,9 @@ let Decrease = () => {
       <div className="main2">
         <h1>Output</h1>
         <h3>Count: {count}</h3>
-        <button onClick={Increase}>Increase</button>
-        <button onClick={Decrease}>Decrease</button>
-        <button onClick={Reset}>Reset</button>
+        <button className='btn2' onClick={Increase}>Increase</button>
+        <button className='btn3' onClick={Decrease}>Decrease</button>
+        <button className='btn4' onClick={Reset}>Reset</button>
       </div>
     </>
   )
